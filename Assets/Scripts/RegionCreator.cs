@@ -9,6 +9,7 @@ public class RegionCreator : MonoBehaviour {
 	public GameObject pfbGrainTile;
 	public GameObject pfbCenterTile;
 	public GameObject pfbHouseTile;
+	public GameObject pfbWaterTile;
 
 	private int numberOfRegions = 625;
 
@@ -17,7 +18,6 @@ public class RegionCreator : MonoBehaviour {
 	void Start () 
 	{
 		CreateRegions();
-
 	}
 	
 	void CreateRegions()

@@ -15,13 +15,17 @@ public class RegionInfo : MonoBehaviour {
 
 	void Start ()
 	{
+		//Types of tiles
 		tileList[0] = transform.parent.GetComponent<RegionCreator>().pfbGrassTile;	
-		tileList[1] = transform.parent.GetComponent<RegionCreator>().pfbForestTile;		
+		tileList[1] = transform.parent.GetComponent<RegionCreator>().pfbForestTile;
+
+
 
 		for(int x = 0; x < 10; x++)
 		{
 			for(int y = 0; y < 10; y++)
 			{
+				//The 2nd number should equal the amount of different tiles
 				var random = Random.Range(0, 2);
 				regionMap[x,y] = tileList[random];
 			}
